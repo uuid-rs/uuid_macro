@@ -1,0 +1,19 @@
+[package]
+authors = [
+    "Hunar Roop Kahlon <hunar.roop@gmail.com>",
+    "YISH <mokeyish@hotmail.com>"
+]
+description = "Procedural uuid!() macro for compile-time uuid creation"
+license = "Apache-2.0/MIT"
+name = "uuid_macro"
+repository = "https://github.com/uuid-rs/uuid_macro"
+version = "0.1.0"
+
+[lib]
+proc-macro = true
+
+[dependencies.syn]
+version = "0.13"
+
+[dependencies.quote]
+version = "0.5"
