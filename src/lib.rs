@@ -22,11 +22,10 @@ proc_macro_expr_decl! {
 /// ```
 /// # #[macro_use]
 /// # extern crate uuid;
+/// # extern crate uuid_macro;
 /// # use uuid::Uuid;
 /// # fn main() {
-/// # let _ : Uuid =
-/// uuid!{"6B29FC40-CA47-1067-B31D-00DD010662DA"}
-/// # ;
+/// #     let _ : Uuid =uuid!("6B29FC40-CA47-1067-B31D-00DD010662DA");
 /// # }
 /// ```
 #[macro_export]
