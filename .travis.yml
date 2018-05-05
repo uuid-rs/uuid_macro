@@ -1,7 +1,7 @@
 language: rust
 sudo: false
 
-rust: nighty
+rust: nightly
 before_script:
   - rustup component add rustfmt-preview
 script:
