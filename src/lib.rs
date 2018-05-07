@@ -40,10 +40,11 @@ macro_rules! uuid {
 #[cfg(test)]
 mod tests {
     use super::*;
-    #[cfg(feature = "nightly")]
+
+    #[cfg(nightly)]
     const CONST_UUID: Uuid = uuid!("F9168C5E-CEB2-4FAA-B6BF-329BF39FA1E4");
 
-    #[cfg(feature = "nightly")]
+    #[cfg(nightly)]
     #[test]
     fn test_const_uuid_macro_build(){
         assert_eq!("f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4", format!("{:x}", CONST_UUID));

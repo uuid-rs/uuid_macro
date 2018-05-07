@@ -13,9 +13,5 @@ version = "0.1.0"
 [dependencies]
 uuid_macro_impl = { path = "./uuid_macro_impl"}
 proc-macro-hack = { version = "0.4"}
-uuid = { git = "https://github.com/mokeyish/uuid.git", branch = "master" }
-#uuid = { git = "https://github.com/mokeyish/uuid.git", branch = "master", features = ["nightly"] }
-
-[features]
-default = []
-nightly = []
+#uuid = { path = "../uuid"}
+uuid = { git = "https://github.com/mokeyish/uuid.git", branch = "nightly-uuid"}
