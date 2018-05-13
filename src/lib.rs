@@ -1,5 +1,4 @@
 extern crate uuid;
-pub use uuid::Uuid;
 
 #[macro_use]
 extern crate proc_macro_hack;
@@ -31,15 +30,16 @@ proc_macro_expr_decl! {
 macro_rules! uuid {
     {$literal:expr} => {
         {
+            use uuid;
             const BYTES: [u8; 16] = uuid_parts! {$literal};
-            $crate::Uuid::from_uuid_bytes(BYTES)
+            uuid::Uuid::from_uuid_bytes(BYTES)
         }
     }
 }
 
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use super::uuid::Uuid;
     #[cfg(feature = "nightly")]
     const CONST_UUID: Uuid = uuid!("F9168C5E-CEB2-4FAA-B6BF-329BF39FA1E4");
 
