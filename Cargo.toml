@@ -1,5 +1,6 @@
 [package]
 authors = [
+    "Dylan DPC<dylan.dpc@gmail.com>",
     "Hunar Roop Kahlon <hunar.roop@gmail.com>",
     "YISH <mokeyish@hotmail.com>"
 ]
