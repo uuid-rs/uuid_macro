@@ -2,8 +2,7 @@
 
 #[macro_use]
 extern crate proc_macro_hack;
-#[macro_use]
-extern crate syn;
+
 #[macro_use]
 extern crate quote;
 

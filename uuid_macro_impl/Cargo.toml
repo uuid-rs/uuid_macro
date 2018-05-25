@@ -12,9 +12,6 @@ version = "0.1.0"
 [lib]
 proc-macro = true
 
-[dependencies.syn]
-version = "0.13"
-
 [dependencies.quote]
 version = "0.5"
 
