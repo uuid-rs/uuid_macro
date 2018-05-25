@@ -4,6 +4,7 @@ extern crate uuid;
 extern crate proc_macro_hack;
 
 #[macro_use]
+#[allow(unused_imports)]
 extern crate uuid_macro_impl;
 
 #[doc(hidden)]
