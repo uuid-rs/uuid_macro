@@ -12,9 +12,9 @@ version = "0.1.0"
 
 
 [dependencies]
-uuid_macro_impl = { path = "./uuid_macro_impl"}
-proc-macro-hack = { version = "0.4"}
-uuid = { version = "0.6.5", features = ["const_fn"]}
+uuid_macro_impl = { path = "./uuid_macro_impl" }
+proc-macro-hack = { version = "0.4" }
+uuid = { version = "0.6.5", features = ["const_fn"], default-features = false }
 
 [features]
 default = []
