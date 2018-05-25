@@ -1,11 +1,10 @@
-#![recursion_limit="128"]
+#![recursion_limit = "128"]
 
 #[macro_use]
 extern crate proc_macro_hack;
 
 #[macro_use]
 extern crate quote;
-
 
 proc_macro_expr_impl! {
     pub fn uuid_parts_impl(input: &str) -> String {

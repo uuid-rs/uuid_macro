@@ -46,12 +46,15 @@ mod tests {
 
     #[cfg(feature = "nightly")]
     #[test]
-    fn test_const_uuid_macro_build(){
-        assert_eq!("f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4", format!("{:x}", CONST_UUID));
+    fn test_const_uuid_macro_build() {
+        assert_eq!(
+            "f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4",
+            format!("{:x}", CONST_UUID)
+        );
     }
 
     #[test]
-    fn test_uuid_macro_build(){
+    fn test_uuid_macro_build() {
         let u: Uuid = uuid!("F9168C5E-CEB2-4FAA-B6BF-329BF39FA1E4");
         assert_eq!("f9168c5e-ceb2-4faa-b6bf-329bf39fa1e4", format!("{:x}", u));
     }
