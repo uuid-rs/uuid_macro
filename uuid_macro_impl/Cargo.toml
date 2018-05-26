@@ -1,21 +1,20 @@
 [package]
 authors = [
-    "Dylan DPC<dylan.dpc@gmail.com>",
     "Hunar Roop Kahlon <hunar.roop@gmail.com>",
     "YISH <mokeyish@hotmail.com>"
 ]
 description = "Procedural uuid!() macro for compile-time uuid creation"
 license = "Apache-2.0/MIT"
-name = "uuid_macro"
+name = "uuid_macro_impl"
 repository = "https://github.com/uuid-rs/uuid_macro"
 version = "0.1.0"
 
+[lib]
+proc-macro = true
 
-[dependencies]
-uuid_macro_impl = { path = "./uuid_macro_impl" }
-proc-macro-hack = { version = "0.4" }
-uuid = { version = "0.6.5", features = ["const_fn"], default-features = false }
+[dependencies.quote]
+version = "0.5"
 
-[features]
-default = []
-nightly = []
+[dependencies.proc-macro-hack]
+version = "0.4"
+
